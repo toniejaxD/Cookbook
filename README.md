@@ -1,12 +1,14 @@
 Cookbook is an app designed for students who want to prepare quick, simple and cheap meals. It is ideal for anyone who is just starting out with cooking or simply looking for tried and tested recipes for everyday meals.
 
 Features:
+
 1) Student recipes: All recipes are tailored for students, with an emphasis on simplicity, speed of preparation and low cost.
 2) Recipe list: Browse recipes with detailed ingredient descriptions, preparation instructions and the time needed to make.
 3)Recipe details: Double-click on a recipe to see full details, including a photo of the dish.
 4) Sorting: Recipes are automatically sorted alphabetically for easy navigation.
 
 Technologies:
+
 The application was developed using:
 
 C# and WPF: The main technologies used to build the user interface.
