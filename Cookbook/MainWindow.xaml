@@ -1,0 +1,40 @@
+﻿<Window x:Class="Cookbook.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cookbook"
+        mc:Ignorable="d"
+        Title="Książka kucharska dla studentów" Height="664" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Przepisy" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="22" FontStyle="Italic" FontWeight="Normal" Grid.Column="1" Height="35" Width="111"/>
+        <DataGrid AutoGenerateColumns="False" Height="588" HorizontalAlignment="Center" Margin="0,50,0,0" Name="dataGrid" VerticalAlignment="Top" Width="780" GridLinesVisibility="None" HeadersVisibility="None" Grid.Column="1" SelectionChanged="dataGrid_SelectionChanged">
+
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type DataGridRow}">
+                    <EventSetter Event="MouseDoubleClick" Handler="DataGridCell_MouseDoubleClick"/>
+                </Style>
+            </DataGrid.Resources>
+
+
+
+            <DataGrid.Columns>
+
+                <DataGridTextColumn  Header=""  Width="200" Binding="{Binding Id}" IsReadOnly="True" Visibility="Hidden"></DataGridTextColumn>
+                <DataGridTextColumn Header=""  Width="200" Binding="{Binding Name}" IsReadOnly="True"></DataGridTextColumn>
+                <DataGridTextColumn Header="" Width="200" Binding="{Binding Time}"  IsReadOnly="True"></DataGridTextColumn>
+                <DataGridTemplateColumn Header="File Type" Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Height="300" Width="300" Source="{Binding Image}"  />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

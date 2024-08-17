@@ -1,0 +1,18 @@
+﻿<Window x:Class="Cookbook.ShowRecipe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cookbook"
+        mc:Ignorable="d"
+        Title="ShowRecipe" Height="964" Width="800">
+    <Grid IsEnabled="False">
+        <Label Name="Name" Content="Nazwa" HorizontalAlignment="Left" Margin="10,12,0,0" VerticalAlignment="Top" FontSize="19"/>
+        <TextBlock Name="Description" HorizontalAlignment="Left" Margin="16,409,0,0" Text="Przepis treść" TextWrapping="Wrap" VerticalAlignment="Top" Height="529" Width="759"/>
+        <Image Name="ImageName" HorizontalAlignment="Left" Height="296" Margin="475,49,0,0" VerticalAlignment="Top" Width="290"/>
+        <Label Name="Time" Content="5 minut" HorizontalAlignment="Left" Margin="115,43,0,0" VerticalAlignment="Top"/>
+        <Label Content="Czas wykonania: " HorizontalAlignment="Left" Margin="16,43,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="Ingredients"  HorizontalAlignment="Left" Margin="16,69,0,0" Text="Składniki" TextWrapping="Wrap" VerticalAlignment="Top" Width="414" Height="335" />
+
+    </Grid>
+</Window>
