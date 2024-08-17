@@ -6,7 +6,7 @@ Features:
 3)Recipe details: Double-click on a recipe to see full details, including a photo of the dish.
 4) Sorting: Recipes are automatically sorted alphabetically for easy navigation.
 
-Technologies
+Technologies:
 The application was developed using:
 
 C# and WPF: The main technologies used to build the user interface.
